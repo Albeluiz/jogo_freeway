@@ -63,33 +63,3 @@ function pausarJogo() {
     somDaTrilha.loop();
   }
 }
-
-
-
-
-function toque(event) {
-  // O método `toque` é chamado sempre que o usuário toca na tela.
-  // Neste caso, usaremos ele para mover o ator na direção do toque.
-  let x = event.x;
-  let y = event.y;
-
-  // Se o toque for feito à esquerda do ator, mova-o para a esquerda.
-  if (x < ator.x) {
-    ator.x -= 5;
-  }
-
-  // Se o toque for feito à direita do ator, mova-o para a direita.
-  if (x > ator.x) {
-    ator.x += 5;
-  }
-
-  // Se o toque for feito acima do ator, mova-o para cima.
-  if (y < ator.y) {
-    ator.y -= 5;
-  }
-
-  // Se o toque for feito abaixo do ator, mova-o para baixo.
-  if (y > ator.y) {
-    ator.y += 5;
-  }
-}
